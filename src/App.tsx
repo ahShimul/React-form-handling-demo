@@ -1,3 +1,4 @@
+import AdvancedForm from './AdvancedForm'
 import './App.css'
 import Forms from './Forms'
 
@@ -6,7 +7,9 @@ function App() {
 
   return (
     <>
-      <Forms />
+      {//<Forms /> 
+        // <AdvancedForm />
+      }
     </>
   )
 }
