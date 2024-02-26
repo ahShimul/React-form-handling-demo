@@ -70,3 +70,22 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.animated-input {
+  opacity: 0; /* Initially hide the inputs */
+  animation: slideIn 0.5s ease forwards; /* Slide in animation */
+}
+
+/* Delay each input using nth-child */
+/* Add more nth-child rules for additional inputs */
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Initial position above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+  }
+}
